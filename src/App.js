@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import firebase from './FirebaseConfig'
 import './App.css';
+import Header from './components/Header/Header';
+import 'bootstrap/dist/css/bootstrap.css'
+import PhotoGallery from './components/PhotoGallery/PhotoGallery';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <PhotoGallery />
+      {/* <div style={{height: '200vh'}}>
+        <h2 style={{ marginTop: '300px' }}>Clear-Choice</h2>
+      </div> */}
     </div>
   );
 }
