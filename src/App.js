@@ -8,6 +8,7 @@ import Test from './components/Test/Test';
 import Admin from './components/Admin/Admin';
 import FirebaseAuthService from './services/FirebaseAuthService';
 import { useState } from 'react';
+import Session from './components/Session/Session';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path='/' element={<PhotoGallery />} />
           <Route path='/login' element={<Admin admin={user} />} />
+          <Route path='/session' element={<Session />} />
           
         </Routes>
       </BrowserRouter>
